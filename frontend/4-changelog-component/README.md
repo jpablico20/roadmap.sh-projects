@@ -39,7 +39,7 @@ frontend/
 - Modify `styles.css` to change the appearance as needed.
 
 ## Project Page
-For more details and live demo, visit: [https://roadmap.sh/projects/changelog-component](https://roadmap.sh/projects/changelog-component)
+For more details and live demo, visit: [Changelog Component](https://roadmap.sh/projects/changelog-component)
 
 ---
 
