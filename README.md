@@ -31,6 +31,12 @@ Click any of the images below to view the readme and live demo of the project.
         <strong>Single-Page CV</strong>
       </a>
     </td>
+    <td align="center" width="50%">
+      <a href="/frontend/4-changelog-component/">
+        <img src="./assets/images/changelog-component.png" alt="changelog component" width="90%" /><br />
+        <strong>Changelog Component</strong>
+      </a>
+    </td>
   </tr>
   
 </table>

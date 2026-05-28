@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Play', sans-serif;
+    background-color: #F5F6FA;
+    color: #222831;
+    padding: 20px;
+}
+
+.changelog-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border: 2px solid #30475E;
+    border-radius: 25px;
+    box-shadow:  0 4px 16px rgba(44, 71, 94, 0.08);
+    padding: 20px;
+}
+
+.changelog-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.changelog-header h1 {
+    font-size: 2.5rem;
+    color: #F05454;
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+
+.changelog-header p {
+    font-size: 1.2rem;
+    color: #30475E;
+}
+
+main {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: minmax(0, 30%) 8px 0% minmax(0, 1fr);
+    width: min(650px, 100%);
+    margin: 40px auto;
+}
+
+.changelog-divider {
+    position: relative;
+    width: 2px;
+    margin: auto;
+    background-color: #F05454;
+    border-radius: 1px;
+    justify-self: center;
+    min-height: 60vh;
+}
+
+section {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+}
+
+section ul li {
+    padding: 22px 0;
+    font-size: 1.1rem;
+    font-family: 'SN Pro', sans-serif;
+}
+
+.changelog-date ul{
+    list-style: none;
+    color: #8A99B3;
+    text-align: end;
+    margin-right: 35px;
+}
+
+.changelog-description ul {
+    list-style: none;        
+    margin-left: 25px;
+    color: #30475E;
+}
+
+section  .dot-position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section .dot-position .dot {
+    position: relative;
+    left: -4px;
+    padding: 22px 0;
+    font-size: 1.1rem;
+    font-family: 'SN Pro', sans-serif;
+
+}
+
+section .dot-position .dot:before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: #F05454;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+button {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: 'Play', sans-serif;
+    color: #FFFFFF;
+    background-color: #F05454;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
