@@ -5,7 +5,7 @@ This repository contains front-end projects built following the [roadmap.sh](htt
 ## Projects List
 [Single-Page CV](https://roadmap.sh/projects/single-page-cv), [Basic HTML Website](https://roadmap.sh/projects/basic-html-website),\
 [Personal Portfolio](https://roadmap.sh/projects/portfolio-website), [Changelog Component](https://roadmap.sh/projects/changelog-component). \
-[Testimonial Cards](https://roadmap.sh/projects/testimonial-cards)
+[Testimonial Cards](https://roadmap.sh/projects/testimonial-cards), [Datepicker UI](https://roadmap.sh/projects/datepicker-ui)
 
 
 Click any of the images below to view the readme and live demo of the project.
@@ -44,6 +44,12 @@ Click any of the images below to view the readme and live demo of the project.
       <a href="/frontend/5-testimonial-cards/">
         <img src="./assets/images/testimonial-cards.png" alt="testimonial cards" width="90%" /><br />
         <strong>Testimonial Cards</strong>
+      </a>
+    </td>
+    <td align="center" width="50%">
+      <a href="/frontend/6-datepicker-ui/">
+        <img src="./assets/images/datepicker-ui.png" alt="datepicker ui" width="90%" /><br />
+        <strong>Datepicker UI</strong>
       </a>
     </td>
   </tr>

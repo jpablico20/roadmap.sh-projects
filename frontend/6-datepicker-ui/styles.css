@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #38443f;
+    color: #151a1a;
+    padding: 20px;
+}
+
+main {
+    padding: 20px 20px;
+    width: min(650px, 100%);
+    height: min(500px, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #7f8954;
+    border-radius: 20px;
+    border: 2px solid #151a1a;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+section {
+    width: min(300px, 100%);
+    margin: 0 auto;
+}
+
+.date-placeholder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9eaba3;
+    border: 2px solid #38443f;
+}
+
+.date-input p {
+    font-size: 1.1rem;
+    color: #151a1a;
+    padding-left: 15px;
+}
+
+.calendar-button {
+    background-color: #545b33;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-left: 2px solid #38443f;
+}
+
+.calendar-button img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+main section:not(:last-child) {
+    margin-bottom: 2px;
+}
+
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #9eaba3;
+    border: 2px solid #38443f;
+}
+
+.month-year-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 20px;
+}
+
+.prev-month, .next-month {
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    cursor: pointer;
+}
+
+.prev-month {
+    border-right: 14px solid #38443f;
+    margin-right: 20px;
+}
+
+.next-month {
+    border-left: 14px solid #38443f;
+    margin-left: 20px;
+}
+
+.month-year {
+    font-size: 1.1rem;
+    color: #151a1a;
+}
+
+.week-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-bottom: 2px solid #38443f;
+}
+
+.day-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.first-day {
+    grid-column-start: 4; 
+}
+
+.day-name {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+}
+
+.day-cell {
+    min-height: 40px;
+    min-width: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border-right: 1px solid #38443f;
+    border-bottom: 1px solid #38443f;
+}
+
+.day-cell:nth-child(7n) {
+    border-right: none; 
+}
