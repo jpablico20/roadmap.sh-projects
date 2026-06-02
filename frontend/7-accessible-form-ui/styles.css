@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    background-color: #d9d9d9;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #353535;
+}
+
+main {  
+    display: flex;
+    gap: 30px;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d9d9d9;
+}
+
+form {
+    border-radius: 8px;
+    min-width: 15vw;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+}
+
+button[type="submit"] {
+    background-color: #3c6e71;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+button[type="button"] {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 1.5rem; 
+    width: 1.5rem;
+    padding: 0;
+}
+.visibility-toggle {
+    background-image: url("visibility.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(0.5);
+}
+
+.password-container {
+    position: relative;
+}
+
+button.visibility-toggle {
+    position: absolute;
+    right: 1rem;
+    bottom: 1.3rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+button[type="submit"]:focus {
+    outline: 2px solid #284b63;
+    outline-offset: 2px;
+}
+
+.progress-section {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.circle-progress {
+    --size: 120px;
+    --thickness: 5px;
+    --percentage: 0; /* set via inline style or CSS */
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: conic-gradient(
+        from 180deg,
+        #3c6e71 calc(var(--percentage) * 1%),
+        #d9d9d9 calc(var(--percentage) * 1%)
+    );
+    position: relative;
+    transition: background 400ms ease;
+    box-sizing: border-box;
+}
+
+.circle-progress::before{
+  content: "";
+  position: absolute;
+  width: calc(var(--size) - (var(--thickness) * 2));
+  height: calc(var(--size) - (var(--thickness) * 2));
+  border-radius: 50%;
+  background: white; /* inner circle color */
+  z-index: 1;
+}
+
+.progress-text {
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.checklist {
+    display: block;
+    background-color: #d9d9d9;
+    padding: 15px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    width: 80%;   
+    height: 150px;
+        
+}
+
+.checklist p {
+    margin: 5px 0;
+    font-weight: 400;
+}
+
+.done {
+    position: relative;
+    color: #353535;
+}
+
+.done::after {
+    content: "";
+    position: absolute;
+    left: -2%;
+    top: 50%;
+    width: 105%;
+    height: 2px;
+    background-color: #353535;
+    transform: translateY(-50%);
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Responsive adjustments */
+main {
+  width: 100%;
+  max-width: 580px;
+  margin: 0 auto;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/* Make columns stack on narrow screens */
+@media (max-width: 820px) {
+  main { flex-direction: column; gap: 18px; align-items: stretch; }
+  form { min-width: auto; width: 100%; height: auto; padding-bottom: 16px; }
+  .progress-section { width: 100%; align-items: center; }
+  .checklist { width: 100%; height: auto; }
+
+  /* Inputs fill available width */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] { width: 100%; }
+
+  /* Move visibility toggle so it doesn't overlap on small screens */
+  button.visibility-toggle { right: 0.6rem; bottom: 1rem; }
+
+  /* Make progress circle scale down */
+  .circle-progress { --size: 96px; }
+}
+
+/* Smaller phones */
+@media (max-width: 420px) {
+  main { padding: 12px; }
+  .circle-progress { --size: 72px; --thickness: 6px; }
+  .progress-text { font-size: 0.9rem; }
+}
+
+
+
+
+

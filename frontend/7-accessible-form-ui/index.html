@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Form UI</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <h1>Accessible Form UI</h1>
+    <main>
+        <form>
+            <label for="full-name">Full Name</label>
+            <input 
+                type="text" 
+                id="full-name" 
+                name="full-name" 
+                required
+                placeholder="Enter your full name"
+                >
+
+            <label for="email">Email</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required
+                placeholder="Enter your email address"
+                >
+
+            <div class="password-container">
+                <label for="enter-password">Enter Password</label>
+                <input 
+                    type="password" 
+                    id="enter-password" 
+                    name="enter-password" 
+                    required
+                    placeholder="xxxxxx"
+                    >
+                <button type="button" 
+                class="visibility-toggle" 
+                aria-label="Toggle Password Visibility for Enter Password"
+                aria-controls="enter-password"
+                >
+                </button>
+            </div>
+            
+            <div class="password-container">
+                <label for="confirm-password">Confirm Password</label>
+                <input 
+                    type="password" 
+                    id="confirm-password" 
+                    name="confirm-password" 
+                    required
+                    placeholder="xxxxxx">
+                <button 
+                type="button" 
+                class="visibility-toggle" 
+                aria-label="Toggle Password Visibility for Confirm Password"
+                aria-controls="confirm-password"
+                >
+                </button>
+            </div>
+
+            <button type="submit">Update Profile</button>
+        </form>
+        <section class="progress-section">
+            <div class="circle-progress" aria-label="progress percentage" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--percentage: 65;">
+                <div class="progress-text">65%</div>
+            </div>
+            <h2>Profile Completeness</h2>
+            <div class="checklist">
+                <p><span class="done">Create Account</span></p>
+                <p><span class="done">Update Roadmap Progress</span></p>
+                <p><span class="done">Setup Public Profile</span></p>
+                <p>Complete your first project</p>
+                <p>Invite your friends</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

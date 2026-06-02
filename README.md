@@ -53,5 +53,12 @@ Click any of the images below to view the readme and live demo of the project.
       </a>
     </td>
   </tr>
-  
+  <tr>
+    <td align="center" width="50%">
+      <a href="/frontend/7-accessible-forms-ui/">
+        <img src="./assets/images/accessible-forms-ui.png" alt="accessible forms ui" width="90%" /><br />
+        <strong>Accessibe Forms UI</strong>
+      </a>
+    </td>
+  </tr>
 </table>
