@@ -4,8 +4,9 @@ This repository contains front-end projects built following the [roadmap.sh](htt
 
 ## Projects List
 [Single-Page CV](https://roadmap.sh/projects/single-page-cv), [Basic HTML Website](https://roadmap.sh/projects/basic-html-website),\
-[Personal Portfolio](https://roadmap.sh/projects/portfolio-website), [Changelog Component](https://roadmap.sh/projects/changelog-component). \
-[Testimonial Cards](https://roadmap.sh/projects/testimonial-cards), [Datepicker UI](https://roadmap.sh/projects/datepicker-ui)
+[Personal Portfolio](https://roadmap.sh/projects/portfolio-website), [Changelog Component](https://roadmap.sh/projects/changelog-component), \
+[Testimonial Cards](https://roadmap.sh/projects/testimonial-cards), [Datepicker UI](https://roadmap.sh/projects/datepicker-ui), \
+[Accessible Form UI](https://roadmap.sh/projects/accessible-form-ui)
 
 
 Click any of the images below to view the readme and live demo of the project.
@@ -55,9 +56,9 @@ Click any of the images below to view the readme and live demo of the project.
   </tr>
   <tr>
     <td align="center" width="50%">
-      <a href="/frontend/7-accessible-forms-ui/">
-        <img src="./assets/images/accessible-forms-ui.png" alt="accessible forms ui" width="90%" /><br />
-        <strong>Accessibe Forms UI</strong>
+      <a href="/frontend/7-accessible-form-ui/">
+        <img src="./assets/images/accessible-form-ui.png" alt="accessible form ui" width="90%" /><br />
+        <strong>Accessibe Form UI</strong>
       </a>
     </td>
   </tr>
