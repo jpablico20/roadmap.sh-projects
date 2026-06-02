@@ -1,6 +1,7 @@
 # Image Grid Layout
 
-Project page: https://roadmap.sh/projects/image-grid
+Project page:
+[Image Grid](https://roadmap.sh/projects/image-grid)
 
 ## Run the project
 
