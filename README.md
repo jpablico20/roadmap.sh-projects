@@ -6,7 +6,7 @@ This repository contains front-end projects built following the [roadmap.sh](htt
 [Single-Page CV](https://roadmap.sh/projects/single-page-cv), [Basic HTML Website](https://roadmap.sh/projects/basic-html-website),\
 [Personal Portfolio](https://roadmap.sh/projects/portfolio-website), [Changelog Component](https://roadmap.sh/projects/changelog-component), \
 [Testimonial Cards](https://roadmap.sh/projects/testimonial-cards), [Datepicker UI](https://roadmap.sh/projects/datepicker-ui), \
-[Accessible Form UI](https://roadmap.sh/projects/accessible-form-ui)
+[Accessible Form UI](https://roadmap.sh/projects/accessible-form-ui), [Image Grid Layout](https://roadmap.sh/projects/accessible-form-ui)
 
 
 Click any of the images below to view the readme and live demo of the project.
@@ -59,6 +59,12 @@ Click any of the images below to view the readme and live demo of the project.
       <a href="/frontend/7-accessible-form-ui/">
         <img src="./assets/images/accessible-form-ui.png" alt="accessible form ui" width="90%" /><br />
         <strong>Accessibe Form UI</strong>
+      </a>
+    </td>
+    <td align="center" width="50%">
+      <a href="/frontend/8-image-grid-layout/">
+        <img src="./assets/images/image-grid-layout.png" alt="image grid layout" width="90%" /><br />
+        <strong>Image Grid Layout</strong>
       </a>
     </td>
   </tr>
